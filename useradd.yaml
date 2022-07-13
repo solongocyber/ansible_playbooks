@@ -1,0 +1,9 @@
+---
+- name: Add new user Bob
+  hosts: localhost
+  tasks:
+    - name:
+      user:
+        name: Bob
+        uid: 2300
+        comment: "System Admin"
