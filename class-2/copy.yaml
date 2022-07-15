@@ -1,9 +1,0 @@
----
-- name: Copy passwd file
-  hosts: localhost
-  tasks:
-    - name: Copy from /etc/passwd
-      copy:
-        src: /etc/passwd
-        dest: /tmp/copy.yaml
-        

@@ -8,4 +8,4 @@
         path: /root/git_repositories/ansible_playbooks1/myfile.yaml
         block: |
           This is line 1
-          This is line 2
+          This is line 2      
