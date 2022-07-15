@@ -1,0 +1,11 @@
+---
+- name: Add lines to a myfile
+  hosts: localhost
+  tasks:
+    - name: add line
+      blockinfile:
+        create: yes
+        path: /root/git_repositories/ansible_playbooks1/myfile.yaml
+        block: |
+          This is line 1
+          This is line 2
