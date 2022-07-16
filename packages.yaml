@@ -1,0 +1,11 @@
+---
+- name: Packages
+  hosts: all
+  tasks:
+  - name: Packages
+    yum:
+      state: installed
+      name:
+      - vim
+      - curl
+      - wget
