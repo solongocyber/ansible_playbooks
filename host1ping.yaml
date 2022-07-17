@@ -1,6 +1,6 @@
 ---
 - name: Ping 
-  hosts: all
+  hosts: all #all and ungrouped are default groups
   tasks:
     - name: Ping
       ping:
