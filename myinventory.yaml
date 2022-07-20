@@ -4,8 +4,10 @@ all: # all servers
   children:
     group1:
       hosts:
-        167.99.115.96:
+        solongo1: 
+          ansible_host: 10.108.0.3
     group2:
       hosts:
-        159.65.45.52
+        host2:
+          ansible_host: 10.108.0.4
     

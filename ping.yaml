@@ -1,6 +1,6 @@
 ---
 - name: Pinging host
-  hosts: group2
+  hosts: all
   tasks:
     - name: Ping
       ping:
