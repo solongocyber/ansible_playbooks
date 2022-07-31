@@ -1,0 +1,24 @@
+---
+- name: Gathering facts
+  hosts: localhost
+  tasks: 
+  - name:
+    debug:
+      msg: echo " This hostname of the machine name is {{ ansible_hostname }} and this machine blongs to OS fsmily {{ ansible_os_family }} "
+
+# ansible localhost -m setup -a " filter=*ip*"
+  - name: IP address
+    debug:
+      msg: "my Ip address is {{ ansible_default_ipv4.address }}"
+
+  - name:
+    command: echo -e "This is the first line, \n This is second line" 
+    register: result
+
+  - name: Printing variable
+    debug:
+      msg: "{{result}}"
+
+  - name: 
+    debug: 
+      var: result.stdout_lines
